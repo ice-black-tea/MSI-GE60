@@ -1,0 +1,149 @@
+3:693  2:213  Found BIOS RSDP at F0000
+3:693  0:000  Printing ACPI tables from RSDP F0000 ...
+3:693  0:000   F0000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+3:693  0:000    (Xsdt: CB524098, Rsdt: CB524028)
+3:693  0:000    CB524098: 'XSDT', 'MEGABOOK', Rev: 1, Len: 172
+3:693  0:000    CB524028: 'RSDT', 'MEGABOOK', Rev: 1, Len: 104
+3:693  0:000    Tables in Xsdt: 17
+3:693  0:000    0. CB5338C8: 'FACP', 'MEGABOOK', Rev: 5, Len: 268
+3:693  0:000        (Dsdt: CB5241D8, Facs: CB9A4F80, XDsdt: CB5241D8, XFacs: 0)
+3:693  0:000        CB5241D8: 'DSDT', 'MEGABOOK', Rev: 2, Len: 63216
+3:694  0:000        CB9A4F80: 'FACS', Ver: 2, Len: 64
+3:694  0:000    1. CB5339D8: 'APIC', 'MEGABOOK', Rev: 3, Len: 114
+3:694  0:000    2. CB533A50: 'FPDT', 'MEGABOOK', Rev: 1, Len: 68
+3:694  0:000    3. CB533A98: 'ASF!', ' HCG', Rev: 32, Len: 165
+3:694  0:000    4. CB533B40: 'SSDT', 'sensrhub', Rev: 1, Len: 552
+3:694  0:000    5. CB533D68: 'SLIC', 'MEGABOOK', Rev: 1, Len: 374
+3:694  0:000    6. CB533EE0: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 1337
+3:694  0:000    7. CB534420: 'SSDT', 'CpuPm', Rev: 1, Len: 2776
+3:694  0:000    8. CB534EF8: 'MCFG', 'MEGABOOK', Rev: 1, Len: 60
+3:694  0:000    9. CB534F38: 'HPET', 'MEGABOOK', Rev: 1, Len: 56
+3:694  0:000    10. CB534F70: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+3:694  0:000    11. CB535288: 'SSDT', 'SaSsdt', Rev: 1, Len: 13666
+3:694  0:000    12. CB5387F0: 'SSDT', 'SgPeg', Rev: 1, Len: 5770
+3:694  0:000    13. CB539E80: 'MSFF', 'MEGABOOK', Rev: 1, Len: 41
+3:694  0:000    14. CB539EB0: 'BGRT', 'MEGABOOK', Rev: 0, Len: 56
+3:694  0:000    15. CB539EE8: 'DMAR', 'HSW', Rev: 1, Len: 184
+3:694  0:000    16. CB539FA0: 'SSDT', 'OptTabl', Rev: 1, Len: 5169
+3:694  0:000    Tables in Rsdt: 17
+3:694  0:000    0. CB524150: 'FACP', 'MEGABOOK', Rev: 2, Len: 132
+3:694  0:000        (Dsdt: CB5241D8, Facs: CB9A4F40)
+3:694  0:000        CB5241D8: 'DSDT', 'MEGABOOK', Rev: 2, Len: 63216
+3:695  0:000        CB9A4F40: 'FACS', Ver: 0, Len: 64
+3:695  0:000    1. CB5339D8: 'APIC', 'MEGABOOK', Rev: 3, Len: 114
+3:695  0:000    2. CB533A50: 'FPDT', 'MEGABOOK', Rev: 1, Len: 68
+3:695  0:000    3. CB533A98: 'ASF!', ' HCG', Rev: 32, Len: 165
+3:695  0:000    4. CB533B40: 'SSDT', 'sensrhub', Rev: 1, Len: 552
+3:695  0:000    5. CB533D68: 'SLIC', 'MEGABOOK', Rev: 1, Len: 374
+3:695  0:000    6. CB533EE0: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 1337
+3:695  0:000    7. CB534420: 'SSDT', 'CpuPm', Rev: 1, Len: 2776
+3:695  0:000    8. CB534EF8: 'MCFG', 'MEGABOOK', Rev: 1, Len: 60
+3:695  0:000    9. CB534F38: 'HPET', 'MEGABOOK', Rev: 1, Len: 56
+3:695  0:000    10. CB534F70: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+3:695  0:000    11. CB535288: 'SSDT', 'SaSsdt', Rev: 1, Len: 13666
+3:695  0:000    12. CB5387F0: 'SSDT', 'SgPeg', Rev: 1, Len: 5770
+3:695  0:000    13. CB539E80: 'MSFF', 'MEGABOOK', Rev: 1, Len: 41
+3:695  0:000    14. CB539EB0: 'BGRT', 'MEGABOOK', Rev: 0, Len: 56
+3:695  0:000    15. CB539EE8: 'DMAR', 'HSW', Rev: 1, Len: 184
+3:695  0:000    16. CB539FA0: 'SSDT', 'OptTabl', Rev: 1, Len: 5169
+3:695  0:000  Found UEFI Acpi 2.0 RSDP at CB524000
+3:695  0:000  Saving ACPI tables from RSDP CB524000 to EFI\CLOVER\ACPI\origin ...
+3:695  0:000   CB524000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+3:702  0:006    (Xsdt: CB524098, Rsdt: CB524028)
+3:702  0:000    CB524098: 'XSDT', 'MEGABOOK', Rev: 1, Len: 172 -> XSDT.aml
+3:704  0:002    CB524028: 'RSDT', 'MEGABOOK', Rev: 1, Len: 104 -> RSDT.aml
+3:707  0:002    Tables in Xsdt: 17
+3:707  0:000    0. CB5338C8: 'FACP', 'MEGABOOK', Rev: 5, Len: 268 -> FACP.aml
+3:710  0:002        (Dsdt: CB5241D8, Facs: CB9A4F80, XDsdt: CB5241D8, XFacs: 0)
+3:710  0:000        CB5241D8: 'DSDT', 'MEGABOOK', Rev: 2, Len: 63216 -> DSDT.aml
+3:713  0:003        CB9A4F80: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+3:716  0:002    1. CB5339D8: 'APIC', 'MEGABOOK', Rev: 3, Len: 114 -> APIC.aml
+3:719  0:002    2. CB533A50: 'FPDT', 'MEGABOOK', Rev: 1, Len: 68 -> FPDT.aml
+3:721  0:002    3. CB533A98: 'ASF!', ' HCG', Rev: 32, Len: 165 -> ASF!.aml
+3:724  0:002    4. CB533B40: 'SSDT', 'sensrhub', Rev: 1, Len: 552 -> SSDT-0-sensrhub.aml
+3:727  0:002    5. CB533D68: 'SLIC', 'MEGABOOK', Rev: 1, Len: 374 -> SLIC.aml
+3:729  0:002    6. CB533EE0: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 1337 -> SSDT-1-Cpu0Ist.aml
+3:732  0:002    7. CB534420: 'SSDT', 'CpuPm', Rev: 1, Len: 2776 -> SSDT-2-CpuPm.aml (Found hidden SSDT 4 pcs)
+3:734  0:002        * CA484A98: '$', '', Rev: 0, Len: 23117  24 05 00 10 4D 5A 00 00 00 00 00 00 00 00 00 00 
+3:734  0:000        * CB2E8618: 'SSDT', 'ApIst', Rev: 1, Len: 1450  53 53 44 54 AA 05 00 00 01 D3 50 6D 52 65 66 00 Internal length = 1450 -> SSDT-x2_0-ApIst.aml
+3:737  0:002        * CB2E8C18: 'SSDT', 'Cpu0Cst', Rev: 1, Len: 979  53 53 44 54 D3 03 00 00 01 B3 50 6D 52 65 66 00 Internal length = 979 -> SSDT-x2_1-Cpu0Cst.aml
+3:740  0:002        * CB2E7D98: 'SSDT', 'ApCst', Rev: 1, Len: 281  53 53 44 54 19 01 00 00 01 EF 50 6D 52 65 66 00 Internal length = 281 -> SSDT-x2_2-ApCst.aml
+3:742  0:002  
+3:742  0:000    8. CB534EF8: 'MCFG', 'MEGABOOK', Rev: 1, Len: 60 -> MCFG.aml
+3:745  0:002    9. CB534F38: 'HPET', 'MEGABOOK', Rev: 1, Len: 56 -> HPET.aml
+3:748  0:002    10. CB534F70: 'SSDT', 'SataTabl', Rev: 1, Len: 789 -> SSDT-3-SataTabl.aml
+3:750  0:002    11. CB535288: 'SSDT', 'SaSsdt', Rev: 1, Len: 13666 -> SSDT-4-SaSsdt.aml
+3:753  0:002    12. CB5387F0: 'SSDT', 'SgPeg', Rev: 1, Len: 5770 -> SSDT-5-SgPeg.aml
+3:756  0:002    13. CB539E80: 'MSFF', 'MEGABOOK', Rev: 1, Len: 41 -> MSFF.aml
+3:759  0:002    14. CB539EB0: 'BGRT', 'MEGABOOK', Rev: 0, Len: 56 -> BGRT.aml
+3:761  0:002    15. CB539EE8: 'DMAR', 'HSW', Rev: 1, Len: 184 -> DMAR.aml
+3:764  0:002    16. CB539FA0: 'SSDT', 'OptTabl', Rev: 1, Len: 5169 -> SSDT-6-OptTabl.aml
+3:767  0:002    Tables in Rsdt: 17
+3:767  0:000    0. CB524150: 'FACP', 'MEGABOOK', Rev: 2, Len: 132 -> RSDT-FACP.aml
+3:769  0:002        (Dsdt: CB5241D8, Facs: CB9A4F40)
+3:769  0:000        CB5241D8: 'DSDT', 'MEGABOOK', Rev: 2, Len: 63216
+3:770  0:000        CB9A4F40: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
+3:773  0:002    1. CB5339D8: 'APIC', 'MEGABOOK', Rev: 3, Len: 114
+3:773  0:000    2. CB533A50: 'FPDT', 'MEGABOOK', Rev: 1, Len: 68
+3:773  0:000    3. CB533A98: 'ASF!', ' HCG', Rev: 32, Len: 165
+3:773  0:000    4. CB533B40: 'SSDT', 'sensrhub', Rev: 1, Len: 552
+3:773  0:000    5. CB533D68: 'SLIC', 'MEGABOOK', Rev: 1, Len: 374
+3:773  0:000    6. CB533EE0: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 1337
+3:773  0:000    7. CB534420: 'SSDT', 'CpuPm', Rev: 1, Len: 2776
+3:773  0:000    8. CB534EF8: 'MCFG', 'MEGABOOK', Rev: 1, Len: 60
+3:773  0:000    9. CB534F38: 'HPET', 'MEGABOOK', Rev: 1, Len: 56
+3:773  0:000    10. CB534F70: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+3:773  0:000    11. CB535288: 'SSDT', 'SaSsdt', Rev: 1, Len: 13666
+3:773  0:000    12. CB5387F0: 'SSDT', 'SgPeg', Rev: 1, Len: 5770
+3:773  0:000    13. CB539E80: 'MSFF', 'MEGABOOK', Rev: 1, Len: 41
+3:773  0:000    14. CB539EB0: 'BGRT', 'MEGABOOK', Rev: 0, Len: 56
+3:773  0:000    15. CB539EE8: 'DMAR', 'HSW', Rev: 1, Len: 184
+3:773  0:000    16. CB539FA0: 'SSDT', 'OptTabl', Rev: 1, Len: 5169
+3:773  0:000  Found UEFI Acpi 1.0 RSDP at CB524000
+3:773  0:000  Printing ACPI tables from RSDP CB524000 ...
+3:773  0:000   CB524000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+3:773  0:000    (Xsdt: CB524098, Rsdt: CB524028)
+3:773  0:000    CB524098: 'XSDT', 'MEGABOOK', Rev: 1, Len: 172
+3:773  0:000    CB524028: 'RSDT', 'MEGABOOK', Rev: 1, Len: 104
+3:773  0:000    Tables in Xsdt: 17
+3:773  0:000    0. CB5338C8: 'FACP', 'MEGABOOK', Rev: 5, Len: 268
+3:773  0:000        (Dsdt: CB5241D8, Facs: CB9A4F80, XDsdt: CB5241D8, XFacs: 0)
+3:773  0:000        CB5241D8: 'DSDT', 'MEGABOOK', Rev: 2, Len: 63216
+3:774  0:000        CB9A4F80: 'FACS', Ver: 2, Len: 64
+3:774  0:000    1. CB5339D8: 'APIC', 'MEGABOOK', Rev: 3, Len: 114
+3:774  0:000    2. CB533A50: 'FPDT', 'MEGABOOK', Rev: 1, Len: 68
+3:774  0:000    3. CB533A98: 'ASF!', ' HCG', Rev: 32, Len: 165
+3:774  0:000    4. CB533B40: 'SSDT', 'sensrhub', Rev: 1, Len: 552
+3:774  0:000    5. CB533D68: 'SLIC', 'MEGABOOK', Rev: 1, Len: 374
+3:774  0:000    6. CB533EE0: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 1337
+3:774  0:000    7. CB534420: 'SSDT', 'CpuPm', Rev: 1, Len: 2776
+3:774  0:000    8. CB534EF8: 'MCFG', 'MEGABOOK', Rev: 1, Len: 60
+3:774  0:000    9. CB534F38: 'HPET', 'MEGABOOK', Rev: 1, Len: 56
+3:774  0:000    10. CB534F70: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+3:774  0:000    11. CB535288: 'SSDT', 'SaSsdt', Rev: 1, Len: 13666
+3:774  0:000    12. CB5387F0: 'SSDT', 'SgPeg', Rev: 1, Len: 5770
+3:774  0:000    13. CB539E80: 'MSFF', 'MEGABOOK', Rev: 1, Len: 41
+3:774  0:000    14. CB539EB0: 'BGRT', 'MEGABOOK', Rev: 0, Len: 56
+3:774  0:000    15. CB539EE8: 'DMAR', 'HSW', Rev: 1, Len: 184
+3:774  0:000    16. CB539FA0: 'SSDT', 'OptTabl', Rev: 1, Len: 5169
+3:774  0:000    Tables in Rsdt: 17
+3:774  0:000    0. CB524150: 'FACP', 'MEGABOOK', Rev: 2, Len: 132
+3:774  0:000        (Dsdt: CB5241D8, Facs: CB9A4F40)
+3:774  0:000        CB5241D8: 'DSDT', 'MEGABOOK', Rev: 2, Len: 63216
+3:775  0:000        CB9A4F40: 'FACS', Ver: 0, Len: 64
+3:775  0:000    1. CB5339D8: 'APIC', 'MEGABOOK', Rev: 3, Len: 114
+3:775  0:000    2. CB533A50: 'FPDT', 'MEGABOOK', Rev: 1, Len: 68
+3:775  0:000    3. CB533A98: 'ASF!', ' HCG', Rev: 32, Len: 165
+3:775  0:000    4. CB533B40: 'SSDT', 'sensrhub', Rev: 1, Len: 552
+3:775  0:000    5. CB533D68: 'SLIC', 'MEGABOOK', Rev: 1, Len: 374
+3:775  0:000    6. CB533EE0: 'SSDT', 'Cpu0Ist', Rev: 1, Len: 1337
+3:775  0:000    7. CB534420: 'SSDT', 'CpuPm', Rev: 1, Len: 2776
+3:775  0:000    8. CB534EF8: 'MCFG', 'MEGABOOK', Rev: 1, Len: 60
+3:775  0:000    9. CB534F38: 'HPET', 'MEGABOOK', Rev: 1, Len: 56
+3:775  0:000    10. CB534F70: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+3:775  0:000    11. CB535288: 'SSDT', 'SaSsdt', Rev: 1, Len: 13666
+3:775  0:000    12. CB5387F0: 'SSDT', 'SgPeg', Rev: 1, Len: 5770
+3:775  0:000    13. CB539E80: 'MSFF', 'MEGABOOK', Rev: 1, Len: 41
+3:775  0:000    14. CB539EB0: 'BGRT', 'MEGABOOK', Rev: 0, Len: 56
+3:775  0:000    15. CB539EE8: 'DMAR', 'HSW', Rev: 1, Len: 184
+3:775  0:000    16. CB539FA0: 'SSDT', 'OptTabl', Rev: 1, Len: 5169
