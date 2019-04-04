@@ -43,7 +43,7 @@
 				<key>FixLAN</key>
 				<false/>
 				<key>FixRTC</key>
-				<true/>
+				<false/>
 				<key>FixRegions</key>
 				<false/>
 				<key>FixS3D</key>
@@ -147,6 +147,20 @@
 					SUdQVQ==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change B0D3 to HDAU</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					QjBEMw==
+					</data>
+					<key>Replace</key>
+					<data>
+					SERBVQ==
+					</data>
+				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
@@ -187,8 +201,6 @@
 				<key>PluginType</key>
 				<true/>
 			</dict>
-			<key>PluginType</key>
-			<string>1</string>
 			<key>UseSystemIO</key>
 			<true/>
 		</dict>
@@ -205,7 +217,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-v -xcpm darkwake=no nv_disable=1 kext-dev-mode=1</string>
+		<string>-v darkwake=no nv_disable=1 kext-dev-mode=1</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -261,33 +273,14 @@
 				<data>
 				AQAAAA==
 				</data>
+				<key>framebuffer-con0-alldata</key>
+				<data>
+				AAASAAIAAAAwAAAAAQUSAAAIAACHAAAA/wQJAAAIAACH
+				AAAA
+				</data>
 				<key>framebuffer-con0-enable</key>
 				<data>
 				AQAAAA==
-				</data>
-				<key>framebuffer-con0-pipe</key>
-				<data>
-				EgAAAA==
-				</data>
-				<key>framebuffer-con1-enable</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-con1-pipe</key>
-				<data>
-				EgAAAA==
-				</data>
-				<key>framebuffer-con1-type</key>
-				<data>
-				AAgAAA==
-				</data>
-				<key>framebuffer-con2-enable</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-con2-index</key>
-				<data>
-				/////w==
 				</data>
 				<key>framebuffer-fbmem</key>
 				<data>
@@ -296,10 +289,6 @@
 				<key>framebuffer-patch-enable</key>
 				<data>
 				AQAAAA==
-				</data>
-				<key>framebuffer-portcount</key>
-				<data>
-				AgAAAA==
 				</data>
 				<key>framebuffer-stolenmem</key>
 				<data>
@@ -380,8 +369,6 @@
 		<false/>
 		<key>PatchVBiosBytes</key>
 		<array/>
-		<key>ig-platform-id</key>
-		<string>0</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -471,99 +458,59 @@
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
+				<key>Comment</key>
+				<string>disable port limit in XHCI kext (credit RehabMan, based prior PMHeart patch)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				rvDg8PCq
+				g32IDw+DpwQAAA==
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>Name</key>
-				<string>com.apple.iokit.IOAHCIBlockStorage</string>
-				<key>Replace</key>
-				<data>
-				qqqqqqqqqqA=
-				</data>
-			</dict>
-			<dict>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				oKrQ
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.iokit.IOGraphicsFamily</string>
-				<key>Replace</key>
-				<data>
-				oKpg
-				</data>
-			</dict>
-			<dict>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				Muo=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleUSBXHCIPCI</string>
-				<key>Replace</key>
-				<data>
-				Mg==
-				</data>
-			</dict>
-			<dict>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				MtDQqqA=
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>
-				MtXAwKA=
+				g32ID5CQkJCQkA==
 				</data>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>1536MB -&gt; 2048MB for HD4200_4400_4600 Mobile</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				EMA=
+				AQMDAwAAAAIAADABAABgAAAAAGA=
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>com.apple.driver.AppleBacklight</string>
+				<string>com.apple.driver.AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
 				<data>
-				EE4=
+				AQMDAwAAAAIAADABAACQAAAAAIA=
 				</data>
 			</dict>
 			<dict>
+				<key>Comment</key>
+				<string>0x0a260006 disable 0105 port, change 0204 port to HDMI (RehabMan)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				MtDQqqA=
+				AQUJAAAEAACHAAAAAgQJAAAEAACHAAAA
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<string>com.apple.driver.AppleIntelFramebufferAzul</string>
 				<key>Replace</key>
 				<data>
-				MtXAwKA=
+				/wAAAAEAAABAAAAAAgQJAAAIAACHAAAA
 				</data>
 			</dict>
 		</array>
@@ -582,29 +529,29 @@
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP112.88Z.0147.B00.1809171519</string>
+		<string>MBA61.88Z.0108.B00.1809171520</string>
 		<key>Board-ID</key>
-		<string>Mac-3CBD00234E554E41</string>
+		<string>Mac-7DF21CB3ED6977E5</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02419501CDFJQWJC</string>
+		<string>C02443130GUFD478C</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
 		<string>1.0</string>
 		<key>ChassisAssetTag</key>
-		<string>MacBook-Aluminum</string>
+		<string>Air-Enclosure</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
 		<string>0x0A</string>
 		<key>EfiVersion</key>
-		<string>149.0.0.0.0</string>
+		<string>110.0.0.0.0</string>
 		<key>Family</key>
-		<string>MacBook Pro</string>
+		<string>MacBook Air</string>
 		<key>FirmwareFeatures</key>
-		<string>0xE80FE137</string>
+		<string>0xE00FE137</string>
 		<key>FirmwareFeaturesMask</key>
 		<string>0xFF1FFF3F</string>
 		<key>LocationInChassis</key>
@@ -616,13 +563,13 @@
 		<key>Modules</key>
 		<array/>
 		<key>PlatformFeature</key>
-		<string>0x02</string>
+		<string>0xFFFF</string>
 		<key>ProductName</key>
-		<string>MacBookPro11,2</string>
+		<string>MacBookAir6,2</string>
 		<key>SerialNumber</key>
-		<string>C02MPDZZG86R</string>
+		<string>C02NL2Z8F5V7</string>
 		<key>SmUUID</key>
-		<string>56A6DE50-5822-450A-87EB-113314DCD7F8</string>
+		<string>7B8580C3-90E1-4D97-AB53-C35D7097B911</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
