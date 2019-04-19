@@ -38,7 +38,7 @@
 				</data>
 				<key>ports</key>
 				<dict>
-					<key>PR11</key>
+					<key>PR01</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
@@ -47,72 +47,7 @@
 						AQAAAA==
 						</data>
 					</dict>
-				</dict>
-			</dict>
-			<key>model</key>
-			<string>MacBookAir6,2</string>
-		</dict>
-		<key>MacBookAir6,2-EH01-internal-hub</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
-			<key>IOClass</key>
-			<string>AppleUSBHostMergeProperties</string>
-			<key>IONameMatch</key>
-			<string>EH01</string>
-			<key>IOProbeScore</key>
-			<integer>5000</integer>
-			<key>IOProviderClass</key>
-			<string>AppleUSB20InternalHub</string>
-			<key>IOProviderMergeProperties</key>
-			<dict>
-				<key>kUSBSleepPortCurrentLimit</key>
-				<integer>2100</integer>
-				<key>kUSBSleepPowerSupply</key>
-				<integer>2600</integer>
-				<key>kUSBWakePortCurrentLimit</key>
-				<integer>2100</integer>
-				<key>kUSBWakePowerSupply</key>
-				<integer>3200</integer>
-				<key>port-count</key>
-				<data>
-				BQAAAA==
-				</data>
-				<key>ports</key>
-				<dict>
-					<key>HP15</key>
-					<dict>
-						<key>port</key>
-						<data>
-						BQAAAA==
-						</data>
-						<key>portType</key>
-						<integer>0</integer>
-					</dict>
-				</dict>
-			</dict>
-			<key>locationID</key>
-			<integer>487587840</integer>
-			<key>model</key>
-			<string>MacBookAir6,2</string>
-		</dict>
-		<key>MacBookAir6,2-EH02</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.AppleUSBHostMergeProperties</string>
-			<key>IOClass</key>
-			<string>AppleUSBHostMergeProperties</string>
-			<key>IOProviderClass</key>
-			<string>AppleUSBEHCIPCI</string>
-			<key>IOProviderMergeProperties</key>
-			<dict>
-				<key>port-count</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>ports</key>
-				<dict>
-					<key>PR01</key>
+					<key>PR11</key>
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
@@ -136,9 +71,17 @@
 			<string>AppleUSBXHCIPCI</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
+				<key>kUSBSleepPortCurrentLimit</key>
+				<integer>2100</integer>
+				<key>kUSBSleepPowerSupply</key>
+				<integer>2600</integer>
+				<key>kUSBWakePortCurrentLimit</key>
+				<integer>2100</integer>
+				<key>kUSBWakePowerSupply</key>
+				<integer>3200</integer>
 				<key>port-count</key>
 				<data>
-				EQAAAA==
+				AgAAAA==
 				</data>
 				<key>ports</key>
 				<dict>
@@ -158,15 +101,6 @@
 						<key>port</key>
 						<data>
 						AgAAAA==
-						</data>
-					</dict>
-					<key>SSP2</key>
-					<dict>
-						<key>UsbConnector</key>
-						<integer>0</integer>
-						<key>port</key>
-						<data>
-						EQAAAA==
 						</data>
 					</dict>
 				</dict>
