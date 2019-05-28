@@ -81,14 +81,14 @@
 				<integer>3200</integer>
 				<key>port-count</key>
 				<data>
-				AgAAAA==
+				EQAAAA==
 				</data>
 				<key>ports</key>
 				<dict>
 					<key>HS01</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>0</integer>
 						<key>port</key>
 						<data>
 						AQAAAA==
@@ -97,10 +97,28 @@
 					<key>HS02</key>
 					<dict>
 						<key>UsbConnector</key>
-						<integer>3</integer>
+						<integer>0</integer>
 						<key>port</key>
 						<data>
 						AgAAAA==
+						</data>
+					</dict>
+					<key>SSP1</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>port</key>
+						<data>
+						EAAAAA==
+						</data>
+					</dict>
+					<key>SSP2</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>3</integer>
+						<key>port</key>
+						<data>
+						EQAAAA==
 						</data>
 					</dict>
 				</dict>
